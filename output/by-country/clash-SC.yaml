@@ -5,17 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  server: 104.21.19.76
+  port: 2096
+  udp: true
+  type: vless
+  uuid: fee1da7e-a258-4456-8e5e-8ecf6518ed12
+  tls: true
+  servername: ez-82c7e7.aBoBaBA.WorkeRS.dEv
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: ez-82c7e7.abobaba.workers.dev
+- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   server: 188.114.97.6
   port: 8080
   udp: true
   type: vless
-  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    path: /?ed=2560
     headers:
-      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
   server: 64.49.38.3
   port: 8443
   udp: true
@@ -25,11 +40,11 @@ proxies:
   reality-opts:
     public-key: 92KJ-ibs1qTy8nODGrHTW8T0b_trG7McLYv8My9o2EE
   servername: download.autodesk.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+- name: 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
   server: 156.226.168.221
   port: 35193
   udp: true
@@ -41,7 +56,7 @@ proxies:
     public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
     short-id: e8daed2d
   servername: www.apple.com
-  client-fingerprint: safari
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +65,7 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +74,6 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
 rules:
 - MATCH,PROXIES
