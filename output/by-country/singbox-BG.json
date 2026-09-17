@@ -6,13 +6,13 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-      "server": "172.67.67.178",
+      "server": "104.24.30.89",
       "server_port": 443,
       "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
       "tls": {
         "enabled": true,
         "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -20,8 +20,9 @@
       },
       "transport": {
         "type": "ws",
+        "path": "/?ed=2560",
         "headers": {
-          "Host": "rAyAn-007.nAsTaRaN.DpDnS.OrG"
+          "Host": "rayan-007.nastaran.dpdns.org"
         }
       }
     },
@@ -34,7 +35,15 @@
       "tls": {
         "enabled": true,
         "server_name": "neth9.lunariai.ru",
-        "insecure": true
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
