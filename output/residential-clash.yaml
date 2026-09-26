@@ -5,32 +5,54 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 172.67.137.223
+  server: 104.18.0.1
   port: 443
   udp: true
   type: vless
-  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
   tls: true
-  servername: curly-night-6928.ggdhchjk.workers.dev
+  servername: all.speedtest03.ccwu.cc
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /sync
+    path: /
     headers:
-      Host: curly-night-6928.ggdhchjk.workers.dev
+      Host: all.speedtest03.ccwu.cc
 - name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
   server: 82.47.63.156
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
-  server: 79.137.199.52
-  port: 21
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  server: namrcg001640lrm.cybervena.com
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56
+- name: 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
+  server: 37.120.222.70
+  port: 8082
   udp: true
   type: vless
-  uuid: 763e2ddd-c830-4f4f-801c-f6f2c3418d4f
+  uuid: 59c3c1c7-62d0-4707-9d67-5ff9c008591c
+  tls: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
+  server: 211.48.30.184
+  port: 30017
+  udp: true
+  type: vless
+  uuid: beec57a5-8266-4279-b279-f495bdc70699
   tls: true
   servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
   skip-cert-verify: false
@@ -40,15 +62,22 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
-  server: 6dd24f6b-tm96o0-tnggms-6gn6.hk3.hyhuawei.com
+- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
+  server: ce1fc2d8.krkt.hkssip.com
+  port: 49642
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ac9c0a7b
+- name: 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe
+  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
   port: 443
   udp: true
-  type: hysteria2
-  password: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
-  sni: 6dd24f6b-tm96o0-tnggms-6gn6.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  type: anytls
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
+  skip-cert-verify: false
+- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
   server: 118.167.230.191
   port: 24215
   udp: true
@@ -59,14 +88,6 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: edge
-- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
-  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
-  port: 443
-  udp: true
-  type: anytls
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,10 +95,12 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,9 +108,11 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

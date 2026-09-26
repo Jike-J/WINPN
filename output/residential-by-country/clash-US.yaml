@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 172.67.137.223
+  server: 104.18.0.1
   port: 443
   udp: true
   type: vless
-  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
   tls: true
-  servername: curly-night-6928.ggdhchjk.workers.dev
+  servername: all.speedtest03.ccwu.cc
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /sync
+    path: /
     headers:
-      Host: curly-night-6928.ggdhchjk.workers.dev
+      Host: all.speedtest03.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
