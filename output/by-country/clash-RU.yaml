@@ -5,28 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 172.64.158.146
-  port: 2095
+  server: 172.67.167.77
+  port: 443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: cc08d2d0-8a7a-4469-81d2-c43704451271
+  tls: true
+  servername: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: '/?ed=2560security=tls '
+    path: /vl/6871nrbnl9WsdAiOUInt
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 172.64.229.170
-  port: 2086
+  server: 130.49.189.158
+  port: 43558
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU=
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: 91.240.86.70
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 31.76.34.216
   port: 443
   udp: true
@@ -38,14 +46,6 @@ proxies:
     public-key: XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00
   servername: ru-c-1.minzt.su
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 91.240.86.70
-  port: 22443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: 91.240.86.70
-  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   server: 45.12.75.242
   port: 26424
