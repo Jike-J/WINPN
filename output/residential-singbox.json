@@ -4,8 +4,61 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
+      "server": "104.18.42.54",
+      "server_port": 2083,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "newwk1.f1w.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "newwk1.f1w.de5.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
+      "server": "916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "28a5ce18-e7a1-11ec-91b2-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe",
+      "server": "85322329-tn2tc0-to3dy2-nx3b.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "32315324-cf6b-11ed-979b-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "85322329-tn2tc0-to3dy2-nx3b.nw4.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe",
       "server": "24864168545164.d6f54hd1j.cc",
       "server_port": 443,
       "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
@@ -16,16 +69,12 @@
         "insecure": false
       },
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "24864168545164.d6f54hd1j.cc"
-        }
+        "type": "ws"
       }
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe",
       "server": "654168416355441.d6f54hd1j.cc",
       "server_port": 443,
       "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
@@ -36,11 +85,25 @@
         "insecure": false
       },
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "654168416355441.d6f54hd1j.cc"
-        }
+        "type": "ws"
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe",
+      "server": "tw5.dexlos.com",
+      "server_port": 8080,
+      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw5.dexlos.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
       }
     },
     {
@@ -48,16 +111,26 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe"
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe"
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
